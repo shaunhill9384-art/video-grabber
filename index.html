@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Video Grabber — TikTok & Facebook Downloader</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="head">
+      <div class="mark">VG</div>
+      <h1>Video Grabber</h1>
+      <p class="sub">TikTok link ያለ watermark፣ Facebook video/reel ኦርጅናል ጥራት አውርድ።</p>
+    </header>
+
+    <form id="form" class="grabber">
+      <input
+        id="link"
+        type="url"
+        placeholder="https://www.tiktok.com/... ወይም https://www.facebook.com/..."
+        required
+        autocomplete="off"
+      />
+      <button type="submit" id="submitBtn">አምጣ</button>
+    </form>
+
+    <p id="status" class="status" hidden></p>
+
+    <section id="result" class="result" hidden>
+      <div class="preview">
+        <video id="video" controls playsinline></video>
+      </div>
+      <div class="meta">
+        <h2 id="title"></h2>
+        <p id="author"></p>
+        <div class="actions">
+          <a id="downloadHD" class="btn primary" download target="_blank" rel="noopener">HD አውርድ</a>
+          <a id="downloadSD" class="btn ghost" download target="_blank" rel="noopener" hidden>SD አውርድ</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p>የግል/ፐብሊክ ቪዲዮዎችን ብቻ ተጠቀም። የግላዊነት ወይም የቅጂ መብት ያለው ይዘት ላይ ጥንቃቄ አድርግ።</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
